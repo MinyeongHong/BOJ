@@ -1,3 +1,4 @@
+
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 #include <iostream>
@@ -9,12 +10,12 @@ using namespace std;
 int main(void) {
 	string order;
 	int N;
-	queue <int> result,answer;
+	queue <int> result, answer;
 
 	scanf("%d", &N);
 
 	for (int i = 0; i < N; i++) {
-		cin>>order;
+		cin >> order;
 
 		if (order == "push") {
 			int Data = 0;
@@ -59,7 +60,7 @@ int main(void) {
 			if (result.empty()) {
 				answer.push(-1);
 			}
-			else 
+			else
 				answer.push(result.back());
 		}
 		else break;
@@ -71,5 +72,5 @@ int main(void) {
 		answer.pop();
 	}
 
-		return 0;
+	return 0;
 }
